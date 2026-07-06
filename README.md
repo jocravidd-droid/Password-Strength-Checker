@@ -26,3 +26,5 @@ Ce projet a pour unique but de démontrer mes compétences techniques. Il ne pou
 * **@Brascq** : Testeur
 * **@K2h** : Analyse
 * **@lgm** : Co-pilote (un soutien précieux pour débloquer les situations complexes et orienter la réflexion, évitant ainsi le recours aux IA afin de préserver tout le plaisir du développement)
+
+Si vous voulez le mode premium : bacprociel Okai5@
