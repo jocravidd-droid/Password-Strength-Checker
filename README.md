@@ -11,12 +11,12 @@ Cette outils d'analyse verifie si c'est condition sont remplie :
 - Fonction evaluate_password(password) → utilise les 4 fonctions ci-dessus, compte combien de critères sont validés, et renvoie un score : "Faible", "Moyen", "Fort".
 - Boucle principale → demande un mot de passe à l'utilisateur (input()), affiche le résultat, et redemande tant qu'il tape pas "quitter".
 
-# BUT DU PROJET
-il est totalement la pour montrée mais competence est rien d'autre !!
-PAS DE BUT LUCRATIF & PAS DE BUT EDUCATIF
-( c'est aussi un pure plaisire de le faire )
+## Objectif du projet
 
-# Soutien
-@Brascq - testeur
-@K2h - analyse
-@lgm - co-pilote avec moi ( sans le faire a ma place il s'occupe juste si y a un probléme ou je bloque me fait penser a la reponse sa evite d'utiliser l'ia qui donne direct la reponse ce qui est pas du tout amusant ) 
+Ce projet a pour unique but de démontrer mes compétences techniques. Il ne poursuit aucun objectif lucratif ni éducatif. Sa réalisation dictée par le défi technique est également un pur plaisir personnel.
+
+## Remerciements et soutien
+
+* **@Brascq** : Testeur
+* **@K2h** : Analyse
+* **@lgm** : Co-pilote (un soutien précieux pour débloquer les situations complexes et orienter la réflexion, évitant ainsi le recours aux IA afin de préserver tout le plaisir du développement)
