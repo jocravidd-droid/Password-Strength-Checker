@@ -41,8 +41,9 @@ def check_special_char(password):
 
 def check_espace(password):
 
-    if password.spilt(' '):
+    if ' ' in password:
         return True
+    return False
 
 def evaluate_password(password):
 
