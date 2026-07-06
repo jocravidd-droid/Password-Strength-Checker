@@ -12,7 +12,8 @@ Cette outils d'analyse verifie si c'est condition sont remplie :
 - Boucle principale → demande un mot de passe à l'utilisateur (input()), affiche le résultat, et redemande tant qu'il tape pas "quitter".
 
 # BUT DU PROJET
-il est totalement la pour montrée mais competence est rien d'autre n'y a but lucratife ou educatif
+il est totalement la pour montrée mais competence est rien d'autre !!
+PAS DE BUT LUCRATIF & PAS DE BUT EDUCATIF
 ( c'est aussi un pure plaisire de le faire )
 
 # Soutien
