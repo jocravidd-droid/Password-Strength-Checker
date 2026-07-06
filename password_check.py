@@ -16,8 +16,8 @@ def check_uppercase(password):
 
         if caractére.isupper():
             return True
-        else:
-            continue
+
+    return False 
     
 def check_digit(password):
 
@@ -25,19 +25,19 @@ def check_digit(password):
 
         if caractére.isdigit():
             return True
-        else:
-            continue
+
+    return False
 
 def check_special_char(password):
     
     speciaux = "!@#$%^&*"
 
-    for caractére in speciaux:
+    for caractére in password:
 
         if caractére in speciaux:
             return True
-        else:
-            continue
+
+    return False 
 
 def evaluate_password(password):
 
