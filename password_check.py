@@ -89,7 +89,10 @@ def evaluate_password_premium(password):
     courente_password = ["123456", "password", "azerty"]
 
     if password in courente_password:
-        counter -= 1
+        if counter == 0:
+            continue
+        else:
+            counter -= 1
 
     if counter == 1:
         for i in range(0,11):
