@@ -90,7 +90,7 @@ def evaluate_password_premium(password):
 
     if password in courente_password:
         if counter == 0:
-            continue
+            pass
         else:
             counter -= 1
 
