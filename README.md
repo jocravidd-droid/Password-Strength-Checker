@@ -1,5 +1,11 @@
-# Password-Strength-Checker
-Analyseur de force de mot de passe
+# Password Strength Checker
+Petit outil en Python qui évalue la robustesse d'un mot de passe 
+selon plusieurs critères de sécurité (longueur, majuscules, 
+chiffres, caractères spéciaux).
+
+Projet réalisé dans le cadre de mon apprentissage autodidacte 
+en Python, en lien avec mon projet d'orientation vers la 
+cybersécurité et les réseaux (Bac Pro CIEL).
 
 # Fonctionnement !!
 Cette outils d'analyse verifie si c'est condition sont remplie :
@@ -14,15 +20,6 @@ Cette outils d'analyse verifie si c'est condition sont remplie :
 ## Objectif du projet
 
 Ce projet a pour unique but de démontrer mes compétences techniques. Il ne poursuit aucun objectif lucratif ni éducatif. Sa réalisation dictée par le défi technique est également un pur plaisir personnel.
-
-# Password Strength Checker
-Petit outil en Python qui évalue la robustesse d'un mot de passe 
-selon plusieurs critères de sécurité (longueur, majuscules, 
-chiffres, caractères spéciaux).
-
-Projet réalisé dans le cadre de mon apprentissage autodidacte 
-en Python, en lien avec mon projet d'orientation vers la 
-cybersécurité et les réseaux (Bac Pro CIEL).
 
 ## Remerciements et soutien
 
