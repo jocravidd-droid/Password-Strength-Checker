@@ -149,7 +149,7 @@ while systeme_actif:
 
     if choix == "quitter":
         systeme_actif = False
-        print(f"{' Arrêt du système '.upper():-^35}")
+        print(f"\n{' Arrêt du système '.upper():-^35}")
     elif choix == 'bacprociel Okai5@':
         print("\nLancement de l'analyse premium")
         password = input('Password : ')
