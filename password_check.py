@@ -39,6 +39,11 @@ def check_special_char(password):
 
     return False 
 
+def check_espace(password):
+
+    if password.spilt(' '):
+        return True
+
 def evaluate_password(password):
 
     counter = 0
@@ -86,6 +91,9 @@ def evaluate_password_premium(password):
     if check_special_char(password) == True:
         counter += 1
     
+    if check_espace(password) == True:
+        counter += 1
+
     courente_password = ["123456", "password", "azerty"]
 
     if password in courente_password:
@@ -121,7 +129,7 @@ def evaluate_password_premium(password):
 
         print(f"{user} your password is Moyen")
     
-    if counter == 4:
+    if counter == 4 or counter == 5:
         for i in range(0,11):
             c = int(i)
             print(f"\rChargement du resultat : [{'█' * c}]\n", end="", flush=True)
@@ -141,7 +149,7 @@ while systeme_actif:
     if choix == "quitter":
         systeme_actif = False
         print(f"{' Arrêt du système '.upper():-^35}")
-    elif choix == 'Mode secu +':
+    elif choix == 'S@12345678 @joisking':
         print("Lancement de l'analyse premium")
         password = input('Password : ')
         evaluate_password_premium(password)
