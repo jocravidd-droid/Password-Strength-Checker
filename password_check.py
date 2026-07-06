@@ -1,7 +1,7 @@
 import time
 import os
 
-print(f"{' ANALYSE PASSWORD ':-^35}\n")
+print(f"\n{' ANALYSE PASSWORD ':-^35}\n")
 
 user = input("User : ")
 
