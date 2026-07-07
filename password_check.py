@@ -47,7 +47,7 @@ def check_espace(password):
         return True
     return False
 
-def evaluate_password(password):
+def evaluate_password(password): # J'AI VOLENTAIREMENT PAS AMELIORER CELUI LA
 
     counter = 0
 
@@ -138,15 +138,23 @@ def evaluate_password_premium(password):
     
     elif counter == 1:
         print(f"{user} your password is Faible")
+        print("Fin de l'analyse !\n")
+        return
 
     elif counter == 2:
         print(f"{user} your password is Faible")
+        print("Fin de l'analyse !\n")
+        return
 
     elif counter == 3:
         print(f"{user} your password is Moyen")
+        print("Fin de l'analyse !\n")
+        return
     
     elif counter >= 4:
         print(f"\n{user} your password is Fort")
+        print("Fin de l'analyse !\n")
+        return
 
     print("Fin de L'analyse !\n")
 
