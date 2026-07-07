@@ -51,11 +51,6 @@ def evaluate_password(password):
 
     counter = 0
 
-    if counter == 0:
-        print(f"{user} your password is Very Weak")
-        print("Fin de l'analyse !\n")
-        return
-
     if check_length(password) == True:
         counter += 1
 
@@ -79,6 +74,11 @@ def evaluate_password(password):
     
     if counter == 4:
         print(f"{user} your password is Fort\n")
+    
+    if counter == 0:
+        print(f"{user} your password is Very Weak")
+        print("Fin de l'analyse !\n")
+        return
 
 def chargement():
     for i in range(0,11):
@@ -99,16 +99,16 @@ def evaluate_password_premium(password):
     if check_length(password):
         counter += 1
 
-    if check_uppercase(password) == True:
+    if check_uppercase(password):
         counter += 1
 
-    if check_digit(password) == True:
+    if check_digit(password):
         counter += 1
 
-    if check_special_char(password) == True:
+    if check_special_char(password):
         counter += 1
     
-    if check_espace(password) == True:
+    if check_espace(password):
         counter += 1
 
     courente_password = [
@@ -129,26 +129,23 @@ def evaluate_password_premium(password):
         else:
             counter -= 1
 
+    chargement()
+
     if counter == 0:
-        chargement()
         print(f"{user} your password is Very Weak")
         print("Fin de l'analyse !\n")
         return
     
-    if counter == 1:
-        chargement()
+    elif counter == 1:
         print(f"{user} your password is Faible")
 
-    if counter == 2:
-        chargement()
+    elif counter == 2:
         print(f"{user} your password is Faible")
 
-    if counter == 3:
-        chargement()
+    elif counter == 3:
         print(f"{user} your password is Moyen")
     
-    if counter >= 4:
-        chargement()
+    elif counter >= 4:
         print(f"\n{user} your password is Fort")
 
     print("Fin de L'analyse !\n")
