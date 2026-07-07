@@ -81,13 +81,19 @@ def evaluate_password(password): # J'AI VOLENTAIREMENT PAS AMELIORER CELUI LA
         return
 
 def chargement():
-    for i in range(0,11):
-            print(f"\rChargement du resultat : [{'█' * i}]\n", end="", flush=True)
+    try:
+        for i in range(11):
+            print(f"\rChargement du résultat : [{'█' * i}]")
             time.sleep(0.5)
+
             if os.name == "nt":
                 os.system("cls")
             else:
                 os.system("clear")
+    except KeyboardInterrupt:
+        print("\nChargement interrompu")
+        print(f"\n{' Arrêt du système '.upper():-^35}")
+        raise
 
 def evaluate_password_premium(password):
 
@@ -132,27 +138,27 @@ def evaluate_password_premium(password):
     chargement()
 
     if counter == 0:
-        print(f"{user} your password is Very Weak")
+        print(f"{user} Your password is extremely weak.")
         print("Fin de l'analyse !\n")
         return
     
     elif counter == 1:
-        print(f"{user} your password is Faible")
+        print(f"{user} Your password is weak")
         print("Fin de l'analyse !\n")
         return
 
     elif counter == 2:
-        print(f"{user} your password is Faible")
+        print(f"{user} Your password is fair")
         print("Fin de l'analyse !\n")
         return
 
     elif counter == 3:
-        print(f"{user} your password is Moyen")
+        print(f"{user} Your password is strong")
         print("Fin de l'analyse !\n")
         return
     
     elif counter >= 4:
-        print(f"\n{user} your password is Fort")
+        print(f"\n{user} Your password is very strong")
         print("Fin de l'analyse !\n")
         return
 
@@ -165,18 +171,25 @@ if __name__ == '__main__':
     mdp = 'bacprociel Okai5@'
     
     while systeme_actif:
-        choix = input("Entrez un mot de passe (ou 'quitter') : ")
+        try:
+            choix = input("Entrez un mot de passe (ou 'quitter') : ")
+        except:
+            print('\nInterruption Analyse !')
+            print(f"\n{' Arrêt du système '.upper():-^35}")
+            break
 
         if choix == "quitter":
             systeme_actif = False
             print(f"\n{' Arrêt du système '.upper():-^35}")
         elif choix == mdp:
             print("\nLancement de l'analyse premium")
-            password = input('Password : ')
             try:
+                password = input('Password : ')
                 evaluate_password_premium(password)
             except KeyboardInterrupt:
-                print('Interruption Analyse !')
+                print('\nInterruption Analyse !')
+                print(f"\n{' Arrêt du système '.upper():-^35}")
+                break
         else:
             print("\nAnalyse en cours...\n")
             evaluate_password(choix)
