@@ -82,8 +82,7 @@ def evaluate_password(password):
 
 def chargement():
     for i in range(0,11):
-            i
-            print(f"\rChargement du resultat : [{'█' * c}]\n", end="", flush=True)
+            print(f"\rChargement du resultat : [{'█' * i}]\n", end="", flush=True)
             time.sleep(0.5)
             if os.name == "nt":
                 os.system("cls")
